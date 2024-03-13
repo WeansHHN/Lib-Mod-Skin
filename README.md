@@ -32,14 +32,12 @@ $(TWEAK_NAME)_FILES = ImGuiDrawView.mm $(wildcard Files/SSZipArchive/*.m) $(wild
 ### Tích hợp Lib ModSkin (Imgui Menu)
 
 ```Objective-C
-#import "Files/ModSkin.h"
+#import "ModSkin.h"
 
 ///////Code///////
 if (MenDeal == true)
 {                
     ImGui::Begin(ENCRYPT("Menu AOV!"), &MenDeal); 
-    ImGui::Text("Kích hoạt ở sảnh chờ của game.");
-    ImGui::Separator();
 
     if (ImGui::Button("Mod Skin"))
     {
@@ -59,6 +57,6 @@ if (MenDeal == true)
 
 ## Tác giả
 
-Fix lỗi, đóng lib [Ninh (Weans)](https://hhnios.site).</br>
-Chia sẻ mã nguồn [Dũng (DSGaming)](https://shopdsgm.vn).</br>
-Mã nguồn SSZipArchive [NongShiFu](https://github.com/nongshifu)
+Fix lỗi, đóng lib <b>[Ninh (Weans)](https://hhnios.site).</br></b>
+Chia sẻ mã nguồn <b>[Mr D (DSGaming)](https://shopdsgm.vn).</br></b>
+Mã nguồn SSZipArchive <b>[NongShiFu](https://github.com/nongshifu)</b>
