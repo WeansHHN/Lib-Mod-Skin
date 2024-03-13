@@ -25,8 +25,6 @@
 ### Cấu hình Makefile (theos)
 ```make
 $(TWEAK_NAME)_OBJ_FILES = ModSkin.a
-
-$(TWEAK_NAME)_FILES = ImGuiDrawView.mm $(wildcard Files/SSZipArchive/*.m) $(wildcard Files/SSZipArchive/minizip/*.m) $(wildcard Esp/*.mm) $(wildcard Esp/*.m) $(wildcard IMGUI/*.cpp) $(wildcard IMGUI/*.mm)
 ```
 
 ### Tích hợp Lib ModSkin (Imgui Menu)
