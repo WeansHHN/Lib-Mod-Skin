@@ -61,4 +61,4 @@ if (MenDeal == true)
 
 Fix lỗi, đóng lib [Ninh (Weans)](https://hhnios.site).</br>
 Chia sẻ mã nguồn [Dũng (DSGaming)](https://shopdsgm.vn).</br>
-Mã nguồn SSZipArchive [NongShiFu](https://github.com/nongshifu)]
+Mã nguồn SSZipArchive [NongShiFu](https://github.com/nongshifu)
