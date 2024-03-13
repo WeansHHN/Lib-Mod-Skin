@@ -1,1 +1,64 @@
-# Mod-Skin-Lib
+## Mod-Skin-Lib
+
+<div style="text-align: center;">
+<b>View mẫu của menu:</b><br><br>
+
+|                                          ModSkin                                              |
+| :-------------------------------------------------------------------------------------------: |
+| ![](https://github.com/WeansHHN/img/blob/main/photo_2024-03-13_20-48-31.jpg?raw=true) |
+
+|                                       Remove ModSkin                                          |
+| :-------------------------------------------------------------------------------------------: |
+| ![](https://github.com/WeansHHN/img/blob/main/photo_2024-03-13_20-48-26.jpg?raw=true) |
+
+</div>
+
+<br>
+
+### Đặc trưng:
+* Dùng cho Game AOV (Liên Quân)
+* Dễ sử dụng
+* Thao tác đơn giản
+
+<br>
+
+### Cấu hình Makefile (theos)
+```make
+$(TWEAK_NAME)_OBJ_FILES = ModSkin.a
+
+$(TWEAK_NAME)_FILES = ImGuiDrawView.mm $(wildcard Files/SSZipArchive/*.m) $(wildcard Files/SSZipArchive/minizip/*.m) $(wildcard Esp/*.mm) $(wildcard Esp/*.m) $(wildcard IMGUI/*.cpp) $(wildcard IMGUI/*.mm)
+```
+
+### Tích hợp Lib ModSkin (Imgui Menu)
+
+```Objective-C
+#import "Files/ModSkin.h"
+
+///////Code///////
+if (MenDeal == true)
+{                
+    ImGui::Begin(ENCRYPT("Menu AOV!"), &MenDeal); 
+    ImGui::Text("Kích hoạt ở sảnh chờ của game.");
+    ImGui::Separator();
+
+    if (ImGui::Button("Mod Skin"))
+    {
+       [ModSkinDSGM ActiveModDSGM]; //Mod Skin
+    }
+
+    if (ImGui::Button("Mod Skin"))
+    {
+       [ModSkinDSGM RemoveModDSGM]; //Xóa Mod Skin
+    }
+
+    ImGui::End();
+}
+///////Code///////
+
+```
+
+## Tác giả
+
+Fix lỗi, đóng lib [Ninh (Weans)](https://hhnios.site).</br>
+Chia sẻ mã nguồn [Dũng (DSGaming)](https://shopdsgm.vn).</br>
+Mã nguồn SSZipArchive [NongShiFu](https://github.com/nongshifu)]
