@@ -55,7 +55,7 @@ if (MenDeal == true)
 
 ## Video hướng dẫn
 
-[Video Youtube (https://youtu.be/MlIGtaYcb3Y?si=tPOz0GiIkKpIcHsa)]
+[Video Youtube](https://youtu.be/MlIGtaYcb3Y?si=tPOz0GiIkKpIcHsa)
 
 ## Tác giả
 
