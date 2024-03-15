@@ -53,6 +53,10 @@ if (MenDeal == true)
 
 ```
 
+## Video hướng dẫn
+
+[[Video Youtube](https://youtu.be/N-WAY4RTKp4)]
+
 ## Tác giả
 
 Fix lỗi, đóng lib <b>[Ninh (Weans)](https://hhnios.site).</br></b>
