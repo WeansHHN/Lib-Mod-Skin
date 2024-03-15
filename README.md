@@ -42,7 +42,7 @@ if (MenDeal == true)
        [ModSkinDSGM ActiveModDSGM]; //Mod Skin
     }
 
-    if (ImGui::Button("Mod Skin"))
+    if (ImGui::Button("Remove Mod Skin"))
     {
        [ModSkinDSGM RemoveModDSGM]; //Xóa Mod Skin
     }
