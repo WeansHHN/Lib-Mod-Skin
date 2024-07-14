@@ -37,15 +37,35 @@ if (MenDeal == true)
 {                
     ImGui::Begin(ENCRYPT("Menu AOV!"), &MenDeal); 
 
-    if (ImGui::Button("Mod Skin"))
-    {
-       [ModSkinDSGM ActiveModDSGM]; //Mod Skin
-    }
+    if (ImGui::BeginTable("split", 1))
+            {
+                if (ImGui::Button("Mod Skin"))
+                {
+                    UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:NSSENCRYPT("MenuAOV") message:NSSENCRYPT("Cần đảm bảo mạng để tránh lỗi trong quá trình tải và cài đặt Mod.") preferredStyle:UIAlertControllerStyleAlert];
 
-    if (ImGui::Button("Remove Mod Skin"))
-    {
-       [ModSkinDSGM RemoveModDSGM]; //Xóa Mod Skin
-    }
+                    [alertCtrl addAction:[UIAlertAction actionWithTitle:@"Mod Full Skin" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                        [ModSkin ActiveModFull]; //Auto Mod Full Skin
+                    }]];
+
+                    [alertCtrl addAction:[UIAlertAction actionWithTitle:@"Mod Skin Link" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                        [ModSkin ActiveMod]; //Mod Skin Link
+                    }]];
+
+                    [alertCtrl addAction:[UIAlertAction actionWithTitle:@"Đóng" style:UIAlertActionStyleDefault handler:nil]];
+                    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertCtrl animated:YES completion:nil];
+                }
+                ImGui::SameLine();
+                if (ImGui::Button("Mod Skin File"))
+                {
+                    [ModSkin ActiveModFile]; //Mod Skin to File in iPhone
+                }
+                ImGui::SameLine();
+                if (ImGui::Button("Remove Mod Skin"))
+                {
+                    [ModSkin Backup]; //Delete Mod Skin
+                }
+                ImGui::EndTable();
+            }
 
     ImGui::End();
 }
